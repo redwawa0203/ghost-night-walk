@@ -1869,7 +1869,7 @@ setInterval(function(){
   if(!PR.on&&[16,18,20,22,0,2].indexOf(h)>=0&&d.getMinutes()<5){var key=d.toDateString()+h;if(PR.auto!==key&&$('s-hub').classList.contains('on')){PR.auto=key;paradeStart(false)}}},1000);
 
 /* ===== 收集玩家名稱與造型（先收集、暫不顯示） ===== */
-var COLLECT_URL='';   // ← 把 Google Apps Script 的網頁應用程式網址（結尾是 /exec）貼在這兩個引號中間；留空就不會收集
+var COLLECT_URL='https://script.google.com/macros/s/AKfycbzKDSIlg7xZSCti7TG0Tx09wnHznDr3X0LvDR9g7094GwGh5jom5fT-U51IZ2ItExxl/exec';   // ← 把 Google Apps Script 的網頁應用程式網址（結尾是 /exec）貼在這兩個引號中間；留空就不會收集
 function collectMe(){
   if(!COLLECT_URL)return;
   try{
